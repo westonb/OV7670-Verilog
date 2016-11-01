@@ -62,49 +62,6 @@ module OV7670_config_rom(
     31: dout <= 16'hB1_0c; //ABLC1
     32: dout <= 16'hB2_0e; //RSVD       more magic internet values
     33: dout <= 16'hB3_80; //THL_ST
-    //begin mystery scaling numbers
-    34: dout <= 16'h70_3a;
-    35: dout <= 16'h71_35;
-    36: dout <= 16'h72_11;
-    37: dout <= 16'h73_f0;
-    38: dout <= 16'ha2_02;
-    //gamma curve values
-    39: dout <= 16'h7a_20;
-    40: dout <= 16'h7b_10;
-    41: dout <= 16'h7c_1e;
-    42: dout <= 16'h7d_35;
-    43: dout <= 16'h7e_5a;
-    44: dout <= 16'h7f_69;
-    45: dout <= 16'h80_76;
-    46: dout <= 16'h81_80;
-    47: dout <= 16'h82_88;
-    48: dout <= 16'h83_8f;
-    49: dout <= 16'h84_96;
-    50: dout <= 16'h85_a3;
-    51: dout <= 16'h86_af;
-    52: dout <= 16'h87_c4;
-    53: dout <= 16'h88_d7;
-    54: dout <= 16'h89_e8;
-    //AGC and AEC
-    54: dout <= 16'h13_e0; //COM8, disable AGC / AEC
-    55: dout <= 16'h00_00; //set gain reg to 0 for AGC
-    56: dout <= 16'h10_00; //set ARCJ reg to 0
-    57: dout <= 16'h0d_40; //magic reserved bit for COM4
-    58: dout <= 16'h14_18; //COM9, 4x gain + magic bit
-    59: dout <= 16'ha5_05; // BD50MAX
-    60: dout <= 16'hab_07; //DB60MAX
-    61: dout <= 16'h24_95; //AGC upper limit
-    62: dout <= 16'h25_33; //AGC lower limit
-    63: dout <= 16'h26_e3; //AGC/AEC fast mode op region
-    64: dout <= 16'h9f_78; //HAECC1
-    65: dout <= 16'ha0_68; //HAECC2
-    66: dout <= 16'ha1_03; //magic
-    67: dout <= 16'ha6_d8; //HAECC3
-    68: dout <= 16'ha7_d8; //HAECC4
-    69: dout <= 16'ha8_f0; //HAECC5
-    70: dout <= 16'ha9_90; //HAECC6
-    71: dout <= 16'haa_94; //HAECC7
-    72: dout <= 16'h13_e5; //COM8, enable AGC / AEC
     default: dout <= 16'hFF_FF;         //mark end of ROM
     endcase
     
