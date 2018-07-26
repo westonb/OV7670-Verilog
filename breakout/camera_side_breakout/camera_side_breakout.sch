@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 3
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,7 +28,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-EELAYER 25 0
+LIBS:camera_side_breakout-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -218,4 +219,23 @@ Text Label 3800 4500 0    60   ~ 0
 HREF
 Text Label 3800 4600 0    60   ~ 0
 SIOD
+$Comp
+L C C101
+U 1 1 59FCB06D
+P 4600 2550
+F 0 "C101" H 4715 2596 50  0000 L CNN
+F 1 "C" H 4715 2505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4638 2400 50  0001 C CNN
+F 3 "" H 4600 2550 50  0001 C CNN
+	1    4600 2550
+	1    0    0    -1  
+$EndComp
+Text Label 4600 2300 2    60   ~ 0
+3V3
+Text Label 4600 2800 0    60   ~ 0
+GND
+Wire Wire Line
+	4600 2300 4600 2400
+Wire Wire Line
+	4600 2700 4600 2800
 $EndSCHEMATC

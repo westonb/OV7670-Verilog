@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 3
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,7 +28,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-EELAYER 25 0
+LIBS:wbraun_ic_lib
+LIBS:OV7670_breakout-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -286,7 +288,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 5800 3000 5800
 Wire Wire Line
-	2900 5900 3000 5900
+	2900 5900 3300 5900
 Wire Wire Line
 	2400 5800 2300 5800
 Wire Wire Line
@@ -311,7 +313,7 @@ Text Label 2300 5300 2    60   ~ 0
 D1
 Text Label 2300 5200 2    60   ~ 0
 RST
-Text Label 3000 5900 0    60   ~ 0
+Text Label 3750 5900 0    60   ~ 0
 SIOD
 Text Label 3000 5800 0    60   ~ 0
 HREF
@@ -527,4 +529,85 @@ Text Label 7400 4000 0    60   ~ 0
 SIOC
 Text Label 7300 4300 0    60   ~ 0
 SIOD
+$Comp
+L DALC208 U101
+U 1 1 59FCA1D9
+P 4700 1850
+F 0 "U101" H 4700 2287 60  0000 C CNN
+F 1 "DALC208" H 4700 2181 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 4800 1250 60  0001 C CNN
+F 3 "" H 4800 1250 60  0001 C CNN
+	1    4700 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1700 4250 1700
+Wire Wire Line
+	4150 1700 4150 1500
+Wire Wire Line
+	3900 2000 4250 2000
+Wire Wire Line
+	4150 2000 4150 2200
+$Comp
+L C C101
+U 1 1 59FCA4A3
+P 3900 1850
+F 0 "C101" H 4015 1896 50  0000 L CNN
+F 1 "C" H 4015 1805 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3938 1700 50  0001 C CNN
+F 3 "" H 3900 1850 50  0001 C CNN
+	1    3900 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 2000
+Connection ~ 4150 1700
+$Comp
+L +3V3 #PWR015
+U 1 1 59FCA74D
+P 4150 1500
+F 0 "#PWR015" H 4150 1350 50  0001 C CNN
+F 1 "+3V3" H 4150 1640 50  0000 C CNN
+F 2 "" H 4150 1500 50  0000 C CNN
+F 3 "" H 4150 1500 50  0000 C CNN
+	1    4150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 59FCA7DD
+P 4150 2200
+F 0 "#PWR016" H 4150 1950 50  0001 C CNN
+F 1 "GND" H 4150 2050 50  0000 C CNN
+F 2 "" H 4150 2200 50  0000 C CNN
+F 3 "" H 4150 2200 50  0000 C CNN
+	1    4150 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1700 5250 1700
+Wire Wire Line
+	5150 1800 5250 1800
+Wire Wire Line
+	5150 1900 5250 1900
+Wire Wire Line
+	5150 2000 5250 2000
+$Comp
+L R R103
+U 1 1 59FCA9D2
+P 3450 5900
+F 0 "R103" V 3530 5900 50  0000 C CNN
+F 1 "R" V 3450 5900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3380 5900 50  0001 C CNN
+F 3 "" H 3450 5900 50  0000 C CNN
+	1    3450 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 5900 3750 5900
+Text Label 5250 1700 0    60   ~ 0
+XCLK
+Text Label 5250 1900 0    60   ~ 0
+RST
+Text Label 5250 1800 0    60   ~ 0
+PWDN
 $EndSCHEMATC
