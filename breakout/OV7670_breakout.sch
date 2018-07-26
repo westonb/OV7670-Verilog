@@ -1,34 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:wbraun_ic_lib
+EESchema Schematic File Version 4
 LIBS:OV7670_breakout-cache
 EELAYER 26 0
 EELAYER END
@@ -45,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_02X10 P101
+L OV7670_breakout-rescue:CONN_02X10 P101
 U 1 1 57F3DEC6
 P 2650 5550
 F 0 "P101" H 2650 6100 50  0000 C CNN
@@ -56,7 +26,7 @@ F 3 "" H 2650 4350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X06 P102
+L OV7670_breakout-rescue:CONN_02X06 P102
 U 1 1 57F3DF59
 P 5250 4050
 F 0 "P102" H 5250 4400 50  0000 C CNN
@@ -67,7 +37,7 @@ F 3 "" H 5250 2850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X06 P103
+L OV7670_breakout-rescue:CONN_02X06 P103
 U 1 1 57F3DFC6
 P 5250 5050
 F 0 "P103" H 5250 5400 50  0000 C CNN
@@ -78,7 +48,7 @@ F 3 "" H 5250 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 57F3E0D8
 P 5600 4200
 F 0 "#PWR01" H 5600 3950 50  0001 C CNN
@@ -89,7 +59,7 @@ F 3 "" H 5600 4200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 57F3E0F5
 P 4900 4200
 F 0 "#PWR02" H 4900 3950 50  0001 C CNN
@@ -100,7 +70,7 @@ F 3 "" H 4900 4200 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 57F3E10F
 P 4900 5200
 F 0 "#PWR03" H 4900 4950 50  0001 C CNN
@@ -111,7 +81,7 @@ F 3 "" H 4900 5200 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 57F3E129
 P 5600 5200
 F 0 "#PWR04" H 5600 4950 50  0001 C CNN
@@ -122,7 +92,7 @@ F 3 "" H 5600 5200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +3V3 #PWR05
+L power:+3V3 #PWR05
 U 1 1 57F3E161
 P 4900 5350
 F 0 "#PWR05" H 4900 5200 50  0001 C CNN
@@ -133,7 +103,7 @@ F 3 "" H 4900 5350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3V3 #PWR06
+L power:+3V3 #PWR06
 U 1 1 57F3E17B
 P 5600 5350
 F 0 "#PWR06" H 5600 5200 50  0001 C CNN
@@ -144,7 +114,7 @@ F 3 "" H 5600 5350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3V3 #PWR07
+L power:+3V3 #PWR07
 U 1 1 57F3E195
 P 4900 4350
 F 0 "#PWR07" H 4900 4200 50  0001 C CNN
@@ -155,7 +125,7 @@ F 3 "" H 4900 4350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3V3 #PWR08
+L power:+3V3 #PWR08
 U 1 1 57F3E1AF
 P 5600 4350
 F 0 "#PWR08" H 5600 4200 50  0001 C CNN
@@ -330,7 +300,7 @@ D0
 Text Label 3000 5200 0    60   ~ 0
 PWDN
 $Comp
-L GND #PWR09
+L power:GND #PWR09
 U 1 1 57F3EA80
 P 3000 6000
 F 0 "#PWR09" H 3000 5750 50  0001 C CNN
@@ -341,7 +311,7 @@ F 3 "" H 3000 6000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L power:GND #PWR010
 U 1 1 57F3EA9A
 P 2300 5100
 F 0 "#PWR010" H 2300 4850 50  0001 C CNN
@@ -376,7 +346,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 2800 2400 2800
 $Comp
-L +3V3 #PWR011
+L power:+3V3 #PWR011
 U 1 1 57F3ED91
 P 2300 6000
 F 0 "#PWR011" H 2300 5850 50  0001 C CNN
@@ -387,7 +357,7 @@ F 3 "" H 2300 6000 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 57F3EDAB
 P 3000 5100
 F 0 "#PWR012" H 3000 4850 50  0001 C CNN
@@ -470,7 +440,7 @@ JB3
 Text Label 2400 1800 0    60   ~ 0
 JB4
 $Comp
-L R R101
+L OV7670_breakout-rescue:R R101
 U 1 1 57F3EFB6
 P 7100 3750
 F 0 "R101" V 7180 3750 50  0000 C CNN
@@ -481,7 +451,7 @@ F 3 "" H 7100 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R102
+L OV7670_breakout-rescue:R R102
 U 1 1 57F3F059
 P 7300 3750
 F 0 "R102" V 7380 3750 50  0000 C CNN
@@ -492,7 +462,7 @@ F 3 "" H 7300 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR013
+L power:+3V3 #PWR013
 U 1 1 57F3F098
 P 7100 3500
 F 0 "#PWR013" H 7100 3350 50  0001 C CNN
@@ -503,7 +473,7 @@ F 3 "" H 7100 3500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR014
+L power:+3V3 #PWR014
 U 1 1 57F3F0B6
 P 7300 3500
 F 0 "#PWR014" H 7300 3350 50  0001 C CNN
@@ -530,7 +500,7 @@ SIOC
 Text Label 7300 4300 0    60   ~ 0
 SIOD
 $Comp
-L DALC208 U101
+L wbraun_lib:DALC208 U101
 U 1 1 59FCA1D9
 P 4700 1850
 F 0 "U101" H 4700 2287 60  0000 C CNN
@@ -541,15 +511,15 @@ F 3 "" H 4800 1250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 1700 4250 1700
+	3900 1700 4150 1700
 Wire Wire Line
 	4150 1700 4150 1500
 Wire Wire Line
-	3900 2000 4250 2000
+	3900 2000 4150 2000
 Wire Wire Line
 	4150 2000 4150 2200
 $Comp
-L C C101
+L OV7670_breakout-rescue:C C101
 U 1 1 59FCA4A3
 P 3900 1850
 F 0 "C101" H 4015 1896 50  0000 L CNN
@@ -562,7 +532,7 @@ $EndComp
 Connection ~ 4150 2000
 Connection ~ 4150 1700
 $Comp
-L +3V3 #PWR015
+L power:+3V3 #PWR015
 U 1 1 59FCA74D
 P 4150 1500
 F 0 "#PWR015" H 4150 1350 50  0001 C CNN
@@ -573,7 +543,7 @@ F 3 "" H 4150 1500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR016
+L power:GND #PWR016
 U 1 1 59FCA7DD
 P 4150 2200
 F 0 "#PWR016" H 4150 1950 50  0001 C CNN
@@ -592,7 +562,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 2000 5250 2000
 $Comp
-L R R103
+L OV7670_breakout-rescue:R R103
 U 1 1 59FCA9D2
 P 3450 5900
 F 0 "R103" V 3530 5900 50  0000 C CNN
@@ -610,4 +580,8 @@ Text Label 5250 1900 0    60   ~ 0
 RST
 Text Label 5250 1800 0    60   ~ 0
 PWDN
+Wire Wire Line
+	4150 2000 4250 2000
+Wire Wire Line
+	4150 1700 4250 1700
 $EndSCHEMATC

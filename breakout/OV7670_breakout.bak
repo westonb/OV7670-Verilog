@@ -606,8 +606,8 @@ Wire Wire Line
 	3600 5900 3750 5900
 Text Label 5250 1700 0    60   ~ 0
 XCLK
-Text Label 5250 1800 0    60   ~ 0
-RST
 Text Label 5250 1900 0    60   ~ 0
+RST
+Text Label 5250 1800 0    60   ~ 0
 PWDN
 $EndSCHEMATC
